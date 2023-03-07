@@ -1,17 +1,71 @@
+:root {
+    --main: white;
+    --mainText: #182022;
+    --accent: #e2e2e2;
+    --mainFont: 'Courier New', Courier, monospace;
+    --secondaryFont: Arial, Helvetica, sans-serif;
+  }
+
 * {
     margin: 0;
     padding: 0;
 }
 
+h2 {
+    font-family: var(--mainFont);  
+    color: var(--mainText); 
+}
+
+h3 {
+    margin-top: 0.2em;
+    font-family: var(--mainFont);  
+    color: var(--mainText); 
+}
+
+b {
+    font-family: var(--secondaryFont);
+    color: var(--mainText); 
+}
+
+p {
+    font-family: var(--secondaryFont);
+    color: var(--mainText); 
+}
+
+i {
+    font-family: var(--secondaryFont);
+    color: var(--mainText); 
+}
+
+a {
+    font-family: var(--secondaryFont);
+    color: var(--mainText); 
+}
+
 body {
+    background-color: var(--main);
     width: 100%;
     align-items: center;
     justify-content: center;
-    background-attachment: white;
     
 }
 
+header {
+    background-color: rgb(56, 56, 56);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+button {
+    margin: 1em;
+    margin-right: 2em;
+
+}
+
 main {
+    background-color: var(--main);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -19,7 +73,7 @@ main {
 }
 
 section {
-    margin: 1em;
+    margin: 1.5em;
 }
 
 ul {
@@ -28,30 +82,9 @@ ul {
 }
 
 li {
-    padding-top: 0.5em;
+    font-family: var(--secondaryFont);
+    padding-top: 0.4em;
     padding-left: 0.5em;
-}
-
-main.a4Format {
-    flex-direction: row-reverse;
-    height: 29.7cm;
-    width: 21cm;
-    padding: 5%;
-    justify-content: space-between
-}
-
-.a4Format.sideBar  {
-    height: 29.7cm;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-}
-
-.a4Format.mainColumn   {
-    height: 29.7cm;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
 }
 
 .personalInfo {
@@ -79,19 +112,100 @@ main.a4Format {
 }
 
 .portraitPicture {
+    max-width: 25em;
     width: 50%;
     border-radius: 50%;
 }
 
-@media screen and (min-width: 700px) {
+.linkImg {
+    height: 3em;
+    width: 3em;
+}
+
+
+.linksDiv {
+    width: 8em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media screen and (min-width: 800px) {
 
     main {
         flex-direction: row-reverse;
     }
 
     .sideBar {
-        background-color: gray;
-    
+        background-color: var(--accent);
+        width: 30%;
     }
 
+    .mainColumn {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    main {
+        flex-direction: row-reverse;
+    }
+
+    .sideBar {
+        background-color: var(--accent);
+        padding-left: 3em;
+        width: 30%;
+    }
+
+    .mainColumn {
+        padding-right: 3em;
+        width: 70%;
+    }
+}
+
+body.a4Format {
+    background-color: white;
+}
+
+main.a4Format {
+    background-color: white;
+    flex-direction: row-reverse;
+    height: 29.7cm;
+    width: 21cm;
+    justify-content: space-between
+}
+
+.a4Format.sideBar  {
+    background-color: white;
+    border: 0;
+    border-right: 0.2em;
+    border-style: solid;
+    height: 29.7cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+
+.a4Format.mainColumn {
+    height: 29.7cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+
+.a4Format.linksDiv {
+    width: 100%;
+    height: 3.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#linkedInLink {
+    font-size: medium;
+}
+
+#gitHubLink {
+    font-size: medium;
 }
