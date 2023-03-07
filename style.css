@@ -7,6 +7,7 @@ body {
     width: 100%;
     align-items: center;
     justify-content: center;
+    background-attachment: white;
     
 }
 
@@ -15,11 +16,9 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: peachpuff;
 }
 
 section {
-    background-color:antiquewhite;
     margin: 1em;
 }
 
@@ -33,34 +32,34 @@ li {
     padding-left: 0.5em;
 }
 
-.webFormat {
-
-
-}
-
-.a4Format {
+main.a4Format {
+    flex-direction: row-reverse;
     height: 29.7cm;
     width: 21cm;
+    padding: 5%;
+    justify-content: space-between
 }
 
-.sideBar {
-
-
+.a4Format.sideBar  {
+    height: 29.7cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
 }
 
-.mainColumn {
-
-
+.a4Format.mainColumn   {
+    height: 29.7cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
 }
 
 .personalInfo {
     text-align: center;
-
 }
 
 .listArticle {
     width: 100%;
-
 }
 
 .listPlaceTime {
@@ -84,14 +83,15 @@ li {
     border-radius: 50%;
 }
 
-@media screen and (min-width: 400px) {
-
-}
-
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
 
     main {
         flex-direction: row-reverse;
+    }
+
+    .sideBar {
+        background-color: gray;
+    
     }
 
 }
