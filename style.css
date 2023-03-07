@@ -30,6 +30,8 @@ b {
 p {
     font-family: var(--secondaryFont);
     color: var(--mainText); 
+    max-width: 80ch;
+    
 }
 
 i {
