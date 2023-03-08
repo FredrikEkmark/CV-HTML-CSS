@@ -31,7 +31,6 @@ p {
     font-family: var(--secondaryFont);
     color: var(--mainText); 
     max-width: 80ch;
-    
 }
 
 i {
@@ -48,8 +47,7 @@ body {
     background-color: var(--main);
     width: 100%;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 
 header {
@@ -63,7 +61,6 @@ header {
 button {
     margin: 1em;
     margin-right: 2em;
-
 }
 
 main {
@@ -75,7 +72,7 @@ main {
 }
 
 section {
-    margin: 1.5em;
+    margin: 1em;
 }
 
 ul {
@@ -146,6 +143,10 @@ li {
     .mainColumn {
         width: 70%;
     }
+
+    .skillsList {
+        margin-top: 5em;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -189,6 +190,10 @@ main.a4Format {
     justify-content: flex-start; 
 }
 
+.a4Format.skillsList {
+    margin-top: 1em;
+}
+
 .a4Format.mainColumn {
     height: 29.7cm;
     display: flex;
@@ -206,8 +211,10 @@ main.a4Format {
 
 #linkedInLink {
     font-size: medium;
+    margin-top: 0.3em;
 }
 
 #gitHubLink {
     font-size: medium;
+    margin-top: 0.3em;
 }
