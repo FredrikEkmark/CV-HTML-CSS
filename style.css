@@ -119,11 +119,11 @@ li {
 .linkImg {
     height: 3em;
     width: 3em;
+    margin-right: 1em;
 }
 
-
 .linksDiv {
-    width: 8em;
+    width: 12em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
