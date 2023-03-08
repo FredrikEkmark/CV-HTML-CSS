@@ -12,7 +12,6 @@ function a4Formating() {
         <p id="linkedInLink">se.linkedin.com/in/fredrik-ekmark-21255012a</p>
     `;
     document.getElementById("linksDiv").classList.add("a4Format");
-    
     document.getElementById("contact").innerHTML = `
         <h2>Kontakt</h2>
         <p>Telefon:</p>
@@ -24,4 +23,3 @@ function a4Formating() {
             `;
     document.getElementById("header").innerHTML = "";
 };
-
