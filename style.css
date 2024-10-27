@@ -190,6 +190,10 @@ main.a4Format {
     justify-content: flex-start; 
 }
 
+.a4Format.sideBar p {
+    font-size: 8px;
+}
+
 .a4Format.skillsList {
     margin-top: 1em;
 }
