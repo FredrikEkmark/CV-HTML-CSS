@@ -180,6 +180,7 @@ main.a4Format {
 }
 
 .a4Format.sideBar  {
+    font-size: 10px;
     background-color: white;
     border: 0;
     border-right: 0.2em;
@@ -188,10 +189,6 @@ main.a4Format {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; 
-}
-
-.a4Format.sideBar p {
-    font-size: 2px;
 }
 
 .a4Format.skillsList {
