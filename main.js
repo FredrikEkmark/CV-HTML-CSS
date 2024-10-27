@@ -13,9 +13,12 @@ function a4Formating() {
     `;
     document.getElementById("linksDiv").classList.add("a4Format");
     document.getElementById("contact").innerHTML = `
-        <h2>Contact</h2>
+        <h2>Kontakt</h2>
+        <p>Telefon:</p>
         <p>0727278516</p>
+        <p>Email:</p>
         <p>Fredrik.ekmark@gmail.com</p>
+        <p>Adress:</p>
         <p>Tappvägen 12 <br>168 78 Bromma</p>
             `;
     document.getElementById("header").innerHTML = "";
